@@ -387,6 +387,8 @@ body {
     }
 
     .animate {
+        opacity:0;
+        transform:translateY(60px);
       animation: appear linear;
       animation-timeline: view();
       animation-range: entry 0 cover 25%;
@@ -403,7 +405,13 @@ body {
         transform: translateY(0);
       }
     }
-
+ @supports not (animation-timeline: view()){
+.animate{
+  opacity: 1;
+  transform: translateY(0);
+  animation: none;
+}
+    }
     .hh {
       text-align: end;
       margin-left: -50px;
