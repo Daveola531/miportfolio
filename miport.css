@@ -24,7 +24,8 @@ body {
 .hero-animation{
     opacity: 0;
     transform: translateY(60px);
-    animation: heroPop .9s ease forwards;
+    animation: heroPop 2s ease  forwards;
+
 }
 
 @keyframes heroPop{
@@ -41,7 +42,8 @@ body {
 .left-animation{
     opacity:0;
     transform:translateX(-60px);
-    animation:leftFade .8s ease forwards;
+    animation:leftFade 2s ease forwards;
+    
 }
 
 @keyframes leftFade{
@@ -396,17 +398,14 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+   
 
-    
-
-     
-
-    .hh {
-      text-align: end;
-      margin-left: -50px;
-      position: fixed;
-      bottom: 0;
-      z-index: 99;
+    .hh{
+      text-align: right !important;
+      margin-left: -50px ;
+      position: fixed ;
+      bottom:0 ;
+      z-index: 999 ;
 
     }
 
@@ -425,7 +424,7 @@ body {
       color: white;
       font-size: 50px !important;
       animation: dav 2s ease-in-out infinite;
-      display: inline-block;
+      display:inline-block;
     }
 
     .mee {
@@ -748,4 +747,41 @@ font-size: 12px;
 }
 .pt{
     margin-top: 50px;
+}
+.bg-view{
+  background: #ff3b30;
+  color: white;
+  border: 0;
+  
+}
+.bg-view:hover{
+  color: white;
+}
+.touch{
+  border-color: #ff6c4c;
+}
+.touch:hover{
+  color: white;
+}
+
+.ava{
+  font-family: 'inter',sans-serif;
+  font-size: 22px !important;
+}
+.ava1{
+  font-family: 'inter',sans-serif;
+  font-size: 50px !important;
+}
+
+.bstack{
+  background: #121212;
+  color: #ff5a2d !important;
+  font-weight: bold;
+  transition:all 1s;
+  
+}
+.bstack:hover{
+  background: #ff5a2d;
+  color: white !important;
+  transform: translateY(-2px);
 }
