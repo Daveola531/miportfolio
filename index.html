@@ -708,7 +708,7 @@ var observer = new IntersectionObserver(function (entries) {
       entries[i].target.classList.add('in-view');
     }
   }
-}, { threshold: 0.15 });
+}, { threshold: 0.05 });
 
 for (var j = 0; j < animatedEls.length; j++) {
   observer.observe(animatedEls[j]);
