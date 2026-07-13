@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-y: hidden;
+        }
+        .anime{
+            display: inline-flex;
+            gap:20px;
+            margin-top: 10px;
+            
+        }
+        .anime div{
+           animation: bounce 1s infinite ease-in-out;
+        }
+.anime div:first-child{
+background: red;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+animation-delay: 0.6s;
+}
+.anime div:nth-child(2){
+background: green;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+animation-delay: 0.5s;
+}
+
+.anime div:nth-child(3){
+background: yellow;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+animation-delay: 0.3s;
+}
+@keyframes bounce{
+    50%{
+        transform: translateY(-17px);
+    }
+}
+.h2{
+    color: white;
+    animation: dan 2s ease-out infinite;
+}
+@keyframes dan{
+
+   
+  
+   50%{
+      transform:scaleX(5%);
+   }
+}
+.h{
+    color: white;
+    animation: dan 2s ease-out infinite;
+}
+.hm{
+    color: white;
+    animation: dan 2s ease-out infinite;
+}
+.hn{
+    color: white;
+    animation: dan 2s ease-out infinite;
+}
+.div-text{
+    display: inline-flex;
+    gap: 3px;
+    font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hm{
+color: white;
+animation: dan 2s ease-out infinite;
+}
+.hnn{
+    animation: dan 2s ease-out infinite;
+    color:#ff5a36;
+}
+.hn{
+     animation: dan 2s ease-out infinite;
+    color:#ff5a36;
+}
+    </style>
+</head>
+<body>
+    <div class="div-text">
+    <h2 class="h2"></h2>
+    <h2 class="h"></h2>
+    <h2 class="hm"></h2>
+    <h2 class="hn"></h2>
+    <h2 class="hnn"></h2>
+    </div>
+
+     <div class="anime">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+<script>
+    let text=document.querySelector(".h2");
+     let textT=document.querySelector(".h");
+      let mytext=document.querySelector(".hm");
+       let mitext=document.querySelector(".hn");
+        let miitext=document.querySelector(".hnn");
+    
+    setTimeout(txt,3000);
+    setTimeout(textt,5000)
+    setTimeout(my,6000)
+    setTimeout(mi,8000)
+    setTimeout(mii,9000)
+    function txt(){
+        text.innerHTML="D"
+       
+    }
+    function textt(){
+    textT.innerHTML="A"
+    }
+
+    function my(){
+       mytext.innerHTML="V" 
+    }
+    function mi(){
+        mitext.innerHTML="I"
+       
+    }
+     function mii(){
+    miitext.innerHTML="D"
+       
+    }
+    setTimeout(function(){
+        window.location.href = "home2.html";
+    },20000);
+</script>
+</html>
